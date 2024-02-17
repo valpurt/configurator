@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-200">
+<head>
+  <title>Configurator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
+<body class="h-full">
+<!-- Content area -->
+<div class="flex h-full pl-64">
+  <!-- Main content -->
+  <div class="w-full">
+    <%= yield %>
+  </div>
+</div>
+</body>
+</html>
