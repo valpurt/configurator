@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html class="h-full bg-gray-200">
+<html lang="en" data-theme="light">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Configurator</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
@@ -10,13 +12,25 @@
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= javascript_importmap_tags %>
 </head>
-<body class="h-full">
-<!-- Content area -->
-<div class="flex h-full pl-64">
+<body class="h-screen overflow-hidden bg-base-100 flex flex-col">
+<!-- Topbar -->
+<header class="bg-white py-4 px-6 border-b border-gray-200 flex items-center justify-between">
+  <h2 class="text-xl font-semibold text-gray-700">Configurator</h2>
+  <!-- Other header items -->
+</header>
+
+<div class="flex flex-1 overflow-auto">
+  <!-- Sidebar -->
+  <nav class="w-64 flex flex-col p-6 space-y-4 bg-base-100">
+    <a href="#" class="btn btn-ghost">Dashboard</a>
+    <a href="#" class="btn btn-ghost">Settings</a>
+    <a href="#" class="btn btn-ghost">Profile</a>
+  </nav>
+
   <!-- Main content -->
-  <div class="w-full">
+  <main class="flex-1 overflow-auto px-6 py-4">
     <%= yield %>
-  </div>
+  </main>
 </div>
 </body>
 </html>
