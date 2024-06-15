@@ -1,0 +1,2 @@
+class Extruder < ApplicationRecord
+end

@@ -4,9 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eea11dc0-f893-4042-bd5b-056a762b95be" name="Changes" comment="Adding simple sidebar and topbar">
+    <list default="true" id="eea11dc0-f893-4042-bd5b-056a762b95be" name="Changes" comment="Updating sidebar and topbar">
+      <change afterPath="$PROJECT_DIR$/app/controllers/extruders_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/kinematics_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/printers_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/extruders_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/kinematics_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/printers_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/extruder.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/kinematic.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/printer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/_extruder.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/_extruder.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/extruders/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/_kinematic.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/_kinematic.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/kinematics/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/_printer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/_printer.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/printers/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240615171351_create_printers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240615172005_create_kinematics.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240615172259_create_extruders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/extruders_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/kinematics_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/printers_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/extruders.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/kinematics.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/printers.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/extruder_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/kinematic_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/printer_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/extruders_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/kinematics_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/printers_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,25 +84,30 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2cV9hgJlYfvbQPfWix9GtIdY56L" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Rails.configurator.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Rails.configurator.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/domitea/Work/rascasone/booster-rails",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Rails.configurator">
     <configuration name="configurator" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="configurator" />
@@ -60,7 +118,11 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
@@ -80,7 +142,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
@@ -103,7 +169,11 @@
         <env name="RAILS_ENV" value="test" />
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
@@ -125,7 +195,9 @@
       <option name="presentableId" value="Default" />
       <updated>1708186001573</updated>
       <workItem from="1708186007689" duration="1333000" />
-      <workItem from="1708187362344" duration="7175000" />
+      <workItem from="1708187362344" duration="7853000" />
+      <workItem from="1710754146268" duration="45000" />
+      <workItem from="1718471046778" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -143,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708357163200</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updating sidebar and topbar">
+      <option name="closed" value="true" />
+      <created>1708361773154</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708361773154</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,11 +241,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit" />
     <MESSAGE value="Adding simple sidebar and topbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding simple sidebar and topbar" />
+    <MESSAGE value="Updating sidebar and topbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating sidebar and topbar" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/configurator@configurator.rcov" NAME="configurator Coverage Results" MODIFIED="1708355270109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="configurator" />
+    <SUITE FILE_PATH="coverage/configurator@configurator.rcov" NAME="configurator Coverage Results" MODIFIED="1718472308111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="configurator" />
   </component>
 </project>

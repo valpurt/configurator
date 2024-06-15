@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rotation_distance: 1.5
+  gear_ratio: MyString
+  microsteps: 1
+  full_steps_per_rotation: 1
+  filament_diameter: 1.5
+  nozzle_diameter: 1.5
+
+two:
+  name: MyString
+  rotation_distance: 1.5
+  gear_ratio: MyString
+  microsteps: 1
+  full_steps_per_rotation: 1
+  filament_diameter: 1.5
+  nozzle_diameter: 1.5
