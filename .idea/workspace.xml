@@ -4,67 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eea11dc0-f893-4042-bd5b-056a762b95be" name="Changes" comment="Updating sidebar and topbar">
-      <change afterPath="$PROJECT_DIR$/app/controllers/extruders_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/kinematics_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/printers_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/extruders_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/kinematics_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/printers_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/extruder.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/kinematic.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/printer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/_extruder.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/_extruder.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/extruders/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/_kinematic.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/_kinematic.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/kinematics/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/_printer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/_printer.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/printers/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240615171351_create_printers.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240615172005_create_kinematics.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240615172259_create_extruders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/extruders_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/kinematics_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/printers_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/extruders.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/kinematics.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/printers.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/extruder_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/kinematic_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/printer_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/extruders_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/kinematics_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/printers_test.rb" afterDir="false" />
+    <list default="true" id="eea11dc0-f893-4042-bd5b-056a762b95be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240626183620_add_extruder_to_printers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240626190303_add_kinematics_to_printers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/config_generator/klipper_generator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/printers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/printers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/printers_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/printers_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/extruder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/extruder.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/kinematic.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/kinematic.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/printer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/printer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/printers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/printers/_printer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/_printer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/printers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/printers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,7 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Rails.configurator.executor": "Run",
+    "Rails.configurator.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -106,6 +75,11 @@
     "nodejs_package_manager_path": "npm",
     "ruby.structure.view.model.defaults.configured": "true",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Rails.configurator">
@@ -197,7 +171,8 @@
       <workItem from="1708186007689" duration="1333000" />
       <workItem from="1708187362344" duration="7853000" />
       <workItem from="1710754146268" duration="45000" />
-      <workItem from="1718471046778" duration="1680000" />
+      <workItem from="1718471046778" duration="1958000" />
+      <workItem from="1719423801735" duration="7364000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -223,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708361773154</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding first models">
+      <option name="closed" value="true" />
+      <created>1718472796779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718472796779</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,9 +228,10 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Adding simple sidebar and topbar" />
     <MESSAGE value="Updating sidebar and topbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating sidebar and topbar" />
+    <MESSAGE value="Adding first models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding first models" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/configurator@configurator.rcov" NAME="configurator Coverage Results" MODIFIED="1718472308111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="configurator" />
+    <SUITE FILE_PATH="coverage/configurator@configurator.rcov" NAME="configurator Coverage Results" MODIFIED="1719424380783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="configurator" />
   </component>
 </project>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_15_172259) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_26_190303) do
   create_table "extruders", force: :cascade do |t|
     t.string "name"
     t.float "rotation_distance"
@@ -36,6 +36,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_15_172259) do
     t.integer "print_size_z"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "extruder_id"
+    t.integer "kinematic_id"
+    t.index ["extruder_id"], name: "index_printers_on_extruder_id"
+    t.index ["kinematic_id"], name: "index_printers_on_kinematic_id"
   end
 
+  add_foreign_key "printers", "extruders"
+  add_foreign_key "printers", "kinematics", column: "kinematics_id"
 end

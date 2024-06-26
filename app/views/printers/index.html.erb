@@ -8,7 +8,29 @@
     <%= link_to "New printer", new_printer_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
 
-  <div id="printers" class="min-w-full">
-    <%= render @printers %>
-  </div>
+  <table class="table table-zebra">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size X</th>
+        <th>Size Y</th>
+        <th>Size Z</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @printers.each do |printer| %>
+      <tr>
+        <td><%= printer.name %></td>
+        <td><%= printer.print_size_x %></td>
+        <td><%= printer.print_size_y %></td>
+        <td><%= printer.print_size_z %></td>
+        <td>
+          <%= link_to "Show this printer", printer, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+          <%= link_to "Edit this printer", edit_printer_path(printer), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
 </div>

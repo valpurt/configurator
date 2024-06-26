@@ -19,9 +19,21 @@
     <%= printer.print_size_z %>
   </p>
 
-  <% if action_name != "show" %>
-    <%= link_to "Show this printer", printer, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this printer", edit_printer_path(printer), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
-  <% end %>
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Extruder</strong>
+    <% if (extr = printer.extruder) %>
+      <%= link_to extr.name, extr, class: "link link-hover"%>
+    <% end %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Kinematics</strong>
+    <% if (kin = printer.kinematic) %>
+      <%= link_to kin.name, kin, class: "link link-hover"%>
+    <% end %>
+  </p>
+
+  <textarea class="textarea textarea-bordered w-96 h-96" placeholder="config"><%= prepare_config(@printer) %></textarea>
 </div>
+
+
