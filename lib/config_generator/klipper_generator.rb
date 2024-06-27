@@ -20,7 +20,7 @@ module ConfigGenerator
     def generate_printer
       printer_config = []
       printer_config << '[printer]'
-      printer_config << "kinematics: #{@kinematic.name}"
+      printer_config << "kinematics: #{@kinematic.name.downcase}"
       printer_config.join("\n")
     end
 
