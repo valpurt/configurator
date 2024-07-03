@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,28 @@
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= javascript_importmap_tags %>
 </head>
-<body class="h-screen overflow-hidden bg-base-100 flex flex-col">
+<body class="h-screen overflow-hidden flex flex-col">
 <!-- Topbar -->
-<header class="bg-base-200 py-4 px-6 border-b border-gray-200 flex items-center justify-between">
-  <h2 class="text-xl font-semibold text-gray-700">Configurator</h2>
-  <!-- Other header items -->
-</header>
+<div class="navbar bg-base-300">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">Configurator</a>
+  </div>
+  <div class="flex-none">
+    <button class="btn btn-square btn-ghost">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block h-5 w-5 stroke-current">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
 
 <div class="flex flex-1 overflow-auto">
   <!-- Sidebar -->

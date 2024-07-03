@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eea11dc0-f893-4042-bd5b-056a762b95be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240626183620_add_extruder_to_printers.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20240626190303_add_kinematics_to_printers.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/config_generator/klipper_generator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/rotation_distance_setup_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/rotation_distance_setup_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/rotation_distance_setup/select_extruder.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/rotation_distance_setup/update_distance.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/rotation_distance_setup_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/printers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/printers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/printers_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/printers_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/extruder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/extruder.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/kinematic.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/kinematic.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/printer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/printer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/printers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/printers/_printer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/_printer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/printers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/printers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/printers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/printers/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby Class" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -66,6 +63,7 @@
     "Rails.configurator.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/domitea/Work/rascasone/booster-rails",
     "node.js.detected.package.eslint": "true",
@@ -172,7 +170,7 @@
       <workItem from="1708187362344" duration="7853000" />
       <workItem from="1710754146268" duration="45000" />
       <workItem from="1718471046778" duration="1958000" />
-      <workItem from="1719423801735" duration="7364000" />
+      <workItem from="1719423801735" duration="15192000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -206,7 +204,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718472796779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Connecting models and adding simple config generation">
+      <option name="closed" value="true" />
+      <created>1719431635193</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719431635193</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding simple kinematics seeds">
+      <option name="closed" value="true" />
+      <created>1719467987520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719467987521</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Downcasing kinematics name in klipper generator">
+      <option name="closed" value="true" />
+      <created>1719468119233</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719468119233</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,9 +251,12 @@
     <MESSAGE value="Adding simple sidebar and topbar" />
     <MESSAGE value="Updating sidebar and topbar" />
     <MESSAGE value="Adding first models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding first models" />
+    <MESSAGE value="Connecting models and adding simple config generation" />
+    <MESSAGE value="Adding simple kinematics seeds" />
+    <MESSAGE value="Downcasing kinematics name in klipper generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Downcasing kinematics name in klipper generator" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/configurator@configurator.rcov" NAME="configurator Coverage Results" MODIFIED="1719424380783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="configurator" />
+    <SUITE FILE_PATH="coverage/configurator@configurator.rcov" NAME="configurator Coverage Results" MODIFIED="1720032675070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="configurator" />
   </component>
 </project>

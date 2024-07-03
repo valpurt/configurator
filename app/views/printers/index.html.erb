@@ -26,8 +26,8 @@
         <td><%= printer.print_size_y %></td>
         <td><%= printer.print_size_z %></td>
         <td>
-          <%= link_to "Show this printer", printer, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-          <%= link_to "Edit this printer", edit_printer_path(printer), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+          <%= link_to "Show this printer", printer, class: "btn rounded-lg py-3 px-5 inline-block font-medium" %>
+          <%= link_to "Edit this printer", edit_printer_path(printer), class: "btn rounded-lg py-3 ml-2 px-5 inline-block font-medium" %>
         </td>
       </tr>
     <% end %>

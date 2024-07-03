@@ -123,6 +123,7 @@
         <option value="active_record:multi_db" />
         <option value="application_record" />
         <option value="benchmark" />
+        <option value="bullet:install" />
         <option value="channel" />
         <option value="controller" />
         <option value="erb:controller" />
@@ -156,6 +157,7 @@
         <option value="active_record:multi_db" />
         <option value="application_record" />
         <option value="benchmark" />
+        <option value="bullet:install" />
         <option value="channel" />
         <option value="controller" />
         <option value="erb:controller" />
