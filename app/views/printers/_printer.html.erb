@@ -1,47 +1,9 @@
 <div id="<%= dom_id printer %>" class="grid grid-cols-3 gap-4 w-full">
-  <div class="card bg-base-200 shadow-xl">
-    <div class="card-body">
-      <h2 class="card-title">Basic info</h2>
-      <p class="my-3">
-        <strong class="block font-medium mb-1">Name:</strong>
-        <%= printer.name %>
-      </p>
+  <%= render partial: 'printers/cards/printer_card', locals: {printer: printer} %>
 
-      <p class="my-3">
-        <strong class="block font-medium mb-1">Print size x:</strong>
-        <%= printer.print_size_x %>
-      </p>
+  <%= render partial: 'printers/cards/extruder_card', locals: {extruder: printer.extruder} %>
 
-      <p class="my-3">
-        <strong class="block font-medium mb-1">Print size y:</strong>
-        <%= printer.print_size_y %>
-      </p>
-
-      <p class="my-3">
-        <strong class="block font-medium mb-1">Print size z:</strong>
-        <%= printer.print_size_z %>
-      </p>
-    </div>
-  </div>
-
-  <div class="card bg-base-200 shadow-xl">
-    <div class="card-body">
-      <h2 class="card-title">Extruder</h2>
-      <p>info</p>
-    </div>
-  </div>
-
-  <div class="card bg-base-200 shadow-xl">
-    <div class="card-body">
-      <h2 class="card-title">Operations</h2>
-      <div class="grid grid-cols-3 gap-3">
-        <%= link_to "Edit printer", edit_printer_path(@printer), class: "btn btn-info rounded-lg font-medium" %>
-        <%= link_to "Destroy printer", printer_path(@printer), method: :delete, class: "btn btn-error rounded-lg font-medium" %>
-        <%= link_to "Back to printers", printers_path, class: "btn btn-warning rounded-lg font-medium" %>
-        <%= link_to "Setup rotation distance", printer_rotation_distance_setup_index_path(printer_id: @printer), class: "btn btn-info rounded-lg font-medium" %>
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'printers/cards/action_card' %>
 
   <div class="card bg-base-200 shadow-xl">
     <div class="card-body">
