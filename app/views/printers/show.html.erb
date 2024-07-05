@@ -1,15 +1,8 @@
 <div class="mx-auto md:w-full w-full flex">
-  <div class="mx-auto">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
 
-    <%= render @printer %>
+  <%= render @printer %>
 
-    <%= link_to "Edit this printer", edit_printer_path(@printer), class: "btn mt-2 rounded-lg py-3 px-5 inline-block font-medium" %>
-    <div class="inline-block ml-2">
-      <%= button_to "Destroy this printer", printer_path(@printer), method: :delete, class: "btn btn-error mt-2 rounded-lg py-3 px-5 font-medium" %>
-    </div>
-    <%= link_to "Back to printers", printers_path, class: "btn ml-2 rounded-lg py-3 px-5 inline-block font-medium" %>
-  </div>
 </div>
