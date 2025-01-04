@@ -23,3 +23,4 @@ pin "postcss-js" # @4.0.1
 pin "process" # @2.0.1
 pin "source-map-js" # @1.0.2
 pin "url" # @2.0.1
+pin "vue" # @3.5.13

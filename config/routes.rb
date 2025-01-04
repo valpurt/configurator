@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :settings
+  mount Logster::Web => "/logs"
   resources :extruders
   resources :kinematics
   resources :printers do

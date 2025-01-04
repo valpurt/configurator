@@ -16,7 +16,7 @@
 <!-- Topbar -->
 <div class="navbar bg-base-300">
   <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Configurator</a>
+    <a class="btn text-xl">Configurator</a>
   </div>
   <div class="flex-none">
     <button class="btn btn-square btn-ghost">
@@ -37,17 +37,33 @@
 
 <div class="flex flex-1 overflow-auto">
   <!-- Sidebar -->
-  <ul class="menu bg-base-200 w-64">
-    <li>
-      <%= link_to "Printers", printers_path %>
-    </li>
-    <li>
-      <%= link_to "Kinematics", kinematics_path %>
-    </li>
-    <li>
-      <%= link_to "Extruders", extruders_path %>
-    </li>
-  </ul>
+  <div class="w-64 bg-base-200 p-4">
+    <ul class="menu">
+      <li>
+        <%= link_to "Printers", printers_path %>
+      </li>
+      <li>
+        <%= link_to "Kinematics", kinematics_path %>
+      </li>
+      <li>
+        <%= link_to "Extruders", extruders_path %>
+      </li>
+      <li>
+        <%= link_to "Settings", settings_path %>
+      </li>
+    </ul>
+
+    <ul class="menu bg-base-100 w-full rounded-box mt-4">
+      <li class="menu-title text-secondary-content">Voron 2.4</li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Overview</a></li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Axes</a></li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Extruders</a></li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Sensors</a></li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Fans</a></li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Macros</a></li>
+      <li><a href="#" class="hover:bg-secondary hover:text-white">Calibration</a></li>
+    </ul>
+  </div>
 
   <!-- Main content -->
   <main class="flex-1 overflow-auto px-6 py-4">

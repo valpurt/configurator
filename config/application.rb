@@ -1,4 +1,6 @@
 require_relative "boot"
+require 'redis'
+require 'logster'
 
 require "rails/all"
 
