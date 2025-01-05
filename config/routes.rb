@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :mcus
+  resources :temperature_sensors
+  resources :steppers
+  resources :probes
+  resources :axes
   resources :settings
   mount Logster::Web => '/logs'
   resources :extruders
