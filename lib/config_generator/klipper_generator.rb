@@ -28,10 +28,9 @@ module ConfigGenerator
       extruder_config = []
       extruder_config << "[extruder #{@extruder.name.downcase}]"
       %i[microsteps rotation_distance nozzle_diameter filament_diameter gear_ratio].each do |attr|
-        extruder_config << "#{attr.to_s}: #{@extruder.send(attr)}"
+        extruder_config << "#{attr}: #{@extruder.send(attr)}"
       end
       extruder_config.join("\n")
     end
   end
-
 end

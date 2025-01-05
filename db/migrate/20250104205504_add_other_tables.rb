@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddOtherTables < ActiveRecord::Migration[7.0]
   def change
     create_table :stepper_drivers do |t|
@@ -154,4 +156,3 @@ class AddOtherTables < ActiveRecord::Migration[7.0]
     add_foreign_key :printers, :kinematics, column: :kinematic_id
   end
 end
-

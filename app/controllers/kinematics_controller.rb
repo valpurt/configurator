@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class KinematicsController < ApplicationController
-  before_action :set_kinematic, only: %i[ show edit update destroy ]
+  before_action :set_kinematic, only: %i[show edit update destroy]
 
   # GET /kinematics or /kinematics.json
   def index
@@ -7,8 +9,7 @@ class KinematicsController < ApplicationController
   end
 
   # GET /kinematics/1 or /kinematics/1.json
-  def show
-  end
+  def show; end
 
   # GET /kinematics/new
   def new
@@ -16,8 +17,7 @@ class KinematicsController < ApplicationController
   end
 
   # GET /kinematics/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /kinematics or /kinematics.json
   def create
@@ -25,7 +25,7 @@ class KinematicsController < ApplicationController
 
     respond_to do |format|
       if @kinematic.save
-        format.html { redirect_to kinematic_url(@kinematic), notice: "Kinematic was successfully created." }
+        format.html { redirect_to kinematic_url(@kinematic), notice: 'Kinematic was successfully created.' }
         format.json { render :show, status: :created, location: @kinematic }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class KinematicsController < ApplicationController
   def update
     respond_to do |format|
       if @kinematic.update(kinematic_params)
-        format.html { redirect_to kinematic_url(@kinematic), notice: "Kinematic was successfully updated." }
+        format.html { redirect_to kinematic_url(@kinematic), notice: 'Kinematic was successfully updated.' }
         format.json { render :show, status: :ok, location: @kinematic }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +52,20 @@ class KinematicsController < ApplicationController
     @kinematic.destroy!
 
     respond_to do |format|
-      format.html { redirect_to kinematics_url, notice: "Kinematic was successfully destroyed." }
+      format.html { redirect_to kinematics_url, notice: 'Kinematic was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_kinematic
-      @kinematic = Kinematic.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def kinematic_params
-      params.require(:kinematic).permit(:name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_kinematic
+    @kinematic = Kinematic.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def kinematic_params
+    params.require(:kinematic).permit(:name)
+  end
 end
