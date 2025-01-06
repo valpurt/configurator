@@ -5,7 +5,7 @@ module ConfigGenerator
     def initialize(printer)
       super()
       @printer = printer
-      @extruder = printer.extruder
+      #@extruder = printer.extruder
       @kinematic = printer.kinematic
     end
 
@@ -13,7 +13,7 @@ module ConfigGenerator
       config = []
 
       config << generate_printer
-      config << generate_extruder
+      #config << generate_extruder
       config.join("\n\n")
     end
 

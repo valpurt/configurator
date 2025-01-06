@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 class Extruder < ApplicationRecord
-  has_many :printers
+  belongs_to :printers
 end
