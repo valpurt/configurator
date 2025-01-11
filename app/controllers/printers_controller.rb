@@ -37,7 +37,10 @@ class PrintersController < ApplicationController
   # PATCH/PUT /printers/1 or /printers/1.json
   def update
     respond_to do |format|
-      if @printer.update(printer_params)
+      pams = printer_params
+      pams["extruder_ids"] = pams["extruder_ids"].compact_blank
+
+      if @printer.update(pams)
         format.html { redirect_to printer_url(@printer), notice: 'Printer was successfully updated.' }
         format.json { render :show, status: :ok, location: @printer }
       else
@@ -66,6 +69,6 @@ class PrintersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def printer_params
-    params.require(:printer).permit(:name, :print_size_x, :print_size_y, :print_size_z, :extruder_id, :kinematic_id)
+    params.require(:printer).permit(:name, :print_size_x, :print_size_y, :print_size_z, :kinematic_id, extruder_ids: [])
   end
 end

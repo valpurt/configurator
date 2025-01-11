@@ -33,7 +33,7 @@
 
   <div class="my-5">
     <%= form.label :extruder %>
-    <%= collection_select(:printer, :extruder_id, Extruder.all, :id, :name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full") %>
+    <%= collection_select(:printer, :extruder_ids, Extruder.all, :id, :name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", multiple: true) %>
   </div>
 
   <div class="my-5">
