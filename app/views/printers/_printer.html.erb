@@ -1,7 +1,9 @@
 <div id="<%= dom_id printer %>" class="grid grid-cols-3 gap-4 w-full">
   <%= render partial: 'printers/cards/printer_card', locals: { printer: printer } %>
 
-  <%# render partial: 'printers/cards/extruder_card', locals: { extruder: printer.extruder } %>
+  <% printer.extruders.each do |extruder| %>
+    <%= render partial: 'printers/cards/extruder_card', locals: { extruder: extruder } %>
+  <% end %>
 
   <%= render partial: 'printers/cards/action_card' %>
 
