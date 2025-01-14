@@ -37,10 +37,7 @@ class PrintersController < ApplicationController
   # PATCH/PUT /printers/1 or /printers/1.json
   def update
     respond_to do |format|
-      pams = printer_params
-      pams["extruder_ids"] = pams["extruder_ids"].compact_blank
-
-      if @printer.update(pams)
+      if @printer.update(printer_params)
         format.html { redirect_to printer_url(@printer), notice: 'Printer was successfully updated.' }
         format.json { render :show, status: :ok, location: @printer }
       else

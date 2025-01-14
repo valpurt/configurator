@@ -22,7 +22,7 @@ module ConfigGenerator
       printer_config = []
       printer_config << '[printer]'
       printer_config << "kinematics: #{@kinematic.name.downcase}"
-      (@printer.attributes.keys.map(&:to_sym) - %i[id created_at updated_at kinematic_id]).each do |attr|
+      (@printer.attributes.keys.map(&:to_sym) - %i[id name created_at updated_at kinematic_id]).each do |attr|
         printer_config << "#{attr}: #{@printer.send(attr)}"
       end
       printer_config.join("\n")
@@ -31,7 +31,7 @@ module ConfigGenerator
     def generate_extruder(extruder)
       extruder_config = []
       extruder_config << "[extruder #{extruder.name.downcase}]"
-      (extruder.attributes.keys.map(&:to_sym) - %i[id name]).each do |attr|
+      (extruder.attributes.keys.map(&:to_sym) - %i[id created_at updated_at name printer_id]).each do |attr|
         extruder_config << "#{attr}: #{extruder.send(attr)}"
       end
       extruder_config.join("\n")
